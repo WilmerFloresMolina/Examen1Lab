@@ -189,6 +189,7 @@ void jugador1 (char** m ,int x ,int y , int a , int b){
 		   
            
 	}
+	if(g<=1 && h<=1){
 		if (m[a][b]=='2'){
 		m[a][b]='1';
 		cout<< "se Comio una pieza del jugador 2 :)"<<endl;
@@ -196,8 +197,9 @@ void jugador1 (char** m ,int x ,int y , int a , int b){
 		
 	}
 	
-
-	m[a][b]='1';
+	
+	
+	}
 	}else{//
 		cout<< "no se puede mover mas de 2 espacios"<<endl;
 	}
@@ -246,6 +248,7 @@ void jugador2 (char** m ,int x ,int y , int a , int b){
 		   
            
 	}
+		if(g<=1 && h<=1){
 		if (m[a][b]=='1'){
 		m[a][b]='2';
 		cout<< "se Comio una pieza del jugador 1 :)"<<endl;
@@ -254,7 +257,8 @@ void jugador2 (char** m ,int x ,int y , int a , int b){
 	}
 	
 
-	m[a][b]='2';
+	
+	}
 	}else{//
 		cout<< "no se puede mover mas de 2 espacios"<<endl;
 	}
